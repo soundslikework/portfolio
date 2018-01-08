@@ -1,0 +1,25 @@
+.App {
+  background-image: url('./assets/topography.svg');
+  min-height: 100vh;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 25px auto 25px;
+}
+
+.title-container {
+  font-size: 1.5em;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+main {
+  background-color: pink;
+}
+
+footer {
+  background-color: blue;
+}
