@@ -1,0 +1,13 @@
+.intro .container {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .container p {
+    width: 50%;
+    padding: 25px 10px;
+    margin: 0;
+}

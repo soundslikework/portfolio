@@ -1,13 +1,17 @@
 import React from 'react';
 
+import './style.css';
+
 const Intro = (props) => {
-    const summary = props.data.basics.summary;
-    const work = props.data.work;
+    const summary = props.data.summary;
 
     return (
         <div className="intro">
-            <p>{summary}</p>
-            <p>Currently, I work at {work[0].company}.</p>
+            <div className="container">
+            { summary.map((p, i) => {
+                return <p key={`intro-${i}`}>{p}</p>;
+            })}
+            </div>
         </div>
     );
 };
